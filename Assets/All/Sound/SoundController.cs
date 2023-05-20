@@ -71,7 +71,7 @@ public class SoundController : MonoBehaviour
     void Start()
     {
         bgIndex = Random.Range(0, bg.Length);
-        PlayAudio(bg[bgIndex], PlayerPrefs.GetFloat("Volume", 0.3f), true);
+        PlayAudio(bg[bgIndex], PlayerPrefs.GetFloat("Volume", 0.1f), true);
     }
 
     // Update is called once per frame

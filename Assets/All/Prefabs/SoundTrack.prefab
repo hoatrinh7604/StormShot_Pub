@@ -47,21 +47,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prefab: {fileID: 8550026522529364960, guid: 248972a312c02bc4f9c63e05d464cdcb, type: 3}
   bg:
-  - {fileID: 8300000, guid: 20432d4a86e22814584e0a4b2cd376f2, type: 3}
-  - {fileID: 8300000, guid: c22bb5ece5a9cef47935ab6ce3730c88, type: 3}
-  - {fileID: 8300000, guid: 2d0a65165a739fc439af71279f17d114, type: 3}
+  - {fileID: 8300000, guid: b6cc42e0678789b4f80594b486f80e93, type: 3}
   gameOver: {fileID: 0}
   firing: {fileID: 8300000, guid: 6d7c6c458b54e864b846418ec76e6c03, type: 3}
   bang: {fileID: 8300000, guid: 6d7c6c458b54e864b846418ec76e6c03, type: 3}
-  explosion: {fileID: 8300000, guid: c263b60ce1efbba4bbacb788c6484c36, type: 3}
+  explosion: {fileID: 8300000, guid: 6d7c6c458b54e864b846418ec76e6c03, type: 3}
   playerDeath: {fileID: 8300000, guid: d725618bec5a10a499651069e276e4e8, type: 3}
-  enemySmile: {fileID: 8300000, guid: 565f86dfd3346a64e9f6c28ef8b9101d, type: 3}
+  enemySmile: {fileID: 8300000, guid: 8b2338323b7e29d4ba36d87ffeed2668, type: 3}
   enemyDeath: {fileID: 8300000, guid: d725618bec5a10a499651069e276e4e8, type: 3}
   bossSmile: {fileID: 8300000, guid: 9c6e1a862e5a8f84c9891d2c63783a93, type: 3}
   bossDeath: {fileID: 8300000, guid: d725618bec5a10a499651069e276e4e8, type: 3}
-  hostageSmile: {fileID: 8300000, guid: ee21ab5e05dc1674e94c37b7bb79ea89, type: 3}
+  hostageSmile: {fileID: 8300000, guid: 5bc76014a75e4634fbe5931fdfd301d5, type: 3}
   hostageDeath: {fileID: 8300000, guid: 9cb640c673f2454429cbd6f164a6875d, type: 3}
-  victory: {fileID: 8300000, guid: 3caf9fedbe956b94f8b3b86169e802df, type: 3}
+  victory: {fileID: 8300000, guid: d52d58ee05ebe0740bd1c1f35619788b, type: 3}
   lose: {fileID: 8300000, guid: c2d6358cfe543ce4ab1e1bea9b607075, type: 3}
 --- !u!114 &2135667568608256489
 MonoBehaviour:
