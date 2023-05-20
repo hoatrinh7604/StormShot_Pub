@@ -1,0 +1,29 @@
+{
+  "Items": [
+    {
+      "Level": 1,
+      "Bullet": 4,
+      "Hostage": 1
+    },
+    {
+      "Level": 2,
+      "Bullet": 4,
+      "Hostage": 1
+    },
+    {
+      "Level": 3,
+      "Bullet": 4,
+      "Hostage": 1
+    },
+    {
+      "Level": 4,
+      "Bullet": 1,
+      "Hostage": 1
+    },
+    {
+      "Level": 5,
+      "Bullet": 4,
+      "Hostage": 0
+    }
+  ]
+}

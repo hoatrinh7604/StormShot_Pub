@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "377105128954",
+    "project_id": "bullet-shot---stickman-puzzles",
+    "storage_bucket": "bullet-shot---stickman-puzzles.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:377105128954:android:5c9ced7821cb68f7671843",
+        "android_client_info": {
+          "package_name": "com.puzzle.stormshot.adventure"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "377105128954-af5304v498st006la12vbum2qqhmksnr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBBgG__L2OlzJ6B-MLtEywNpR0Hh9JwZkM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "377105128954-af5304v498st006la12vbum2qqhmksnr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

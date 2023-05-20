@@ -1,0 +1,1221 @@
+{
+  "Cash": 0,
+  "SupportItems": [
+    {
+      "name": "Ammo",
+      "type": 1,
+      "quantity": 0,
+      "price": 500,
+      "isEquip": 0
+    },
+    {
+      "name": "Rifle",
+      "type": 2,
+      "quantity": 0,
+      "price": 500,
+      "isEquip": 0
+    }
+  ],
+  "Levels": [
+    {
+      "level": 1,
+      "isUnlock": true,
+      "star": 0,
+      "bullet": 5,
+      "endGame": {
+        "bullet": 1,
+        "hostage": 0,
+        "cashReward": [
+          {
+            "star": 1
+          },
+          {
+            "star": 10
+          },
+          {
+            "star": 30
+          },
+          {
+            "star": 50
+          }
+        ]
+      }
+    },
+    {
+		  "level": 2,
+      "isUnlock": false,
+      "star": 0,
+      "bullet": 5,
+      "endGame": {
+        "bullet": 1,
+        "hostage": 1,
+        "cashReward": [
+          {
+            "star": 1
+          },
+          {
+            "star": 10
+          },
+          {
+            "star": 30
+          },
+          {
+            "star": 50
+          }
+        ]
+      }
+    },
+		{
+	  	"level": 3,
+      "isUnlock": false,
+      "star": 0,
+      "bullet": 5,
+      "endGame": {
+        "bullet": 1,
+        "hostage": 0,
+        "cashReward": [
+          {
+            "star": 1
+          },
+          {
+            "star": 10
+          },
+          {
+            "star": 30
+          },
+          {
+            "star": 50
+          }
+        ]
+      }
+    },
+		{
+	  	"level": 4,
+      "isUnlock": false,
+      "star": 0,
+      "bullet": 5,
+      "endGame": {
+        "bullet": 1,
+        "hostage": 1,
+        "cashReward": [
+          {
+            "star": 1
+          },
+          {
+            "star": 10
+          },
+          {
+            "star": 30
+          },
+          {
+            "star": 50
+          }
+        ]
+      }
+    },
+		{
+	  	"level": 5,
+      "isUnlock": false,
+      "star": 0,
+      "bullet": 5,
+      "endGame": {
+        "bullet": 3,
+        "hostage": 1,
+        "cashReward": [
+          {
+            "star": 1
+          },
+          {
+            "star": 10
+          },
+          {
+            "star": 30
+          },
+          {
+            "star": 50
+          }
+        ]
+      }
+    },
+    {
+	  	"level": 6,
+      "isUnlock": false,
+      "star": 0,
+      "bullet": 5,
+      "endGame": {
+        "bullet": 1,
+        "hostage": 0,
+        "cashReward": [
+          {
+            "star": 1
+          },
+          {
+            "star": 10
+          },
+          {
+            "star": 30
+          },
+          {
+            "star": 50
+          }
+        ]
+      }
+    },
+    {
+	  	"level": 7,
+      "isUnlock": false,
+      "star": 0,
+      "bullet": 5,
+      "endGame": {
+        "bullet": 2,
+        "hostage": 0,
+        "cashReward": [
+          {
+            "star": 1
+          },
+          {
+            "star": 10
+          },
+          {
+            "star": 30
+          },
+          {
+            "star": 50
+          }
+        ]
+      }
+    },
+    {
+	  	"level": 8,
+      "isUnlock": false,
+      "star": 0,
+      "bullet": 5,
+      "endGame": {
+        "bullet": 1,
+        "hostage": 0,
+        "cashReward": [
+          {
+            "star": 1
+          },
+          {
+            "star": 10
+          },
+          {
+            "star": 30
+          },
+          {
+            "star": 50
+          }
+        ]
+      }
+    },
+        {
+	  	"level": 9,
+      "isUnlock": false,
+      "star": 0,
+      "bullet": 5,
+      "endGame": {
+        "bullet": 1,
+        "hostage": 0,
+        "cashReward": [
+          {
+            "star": 1
+          },
+          {
+            "star": 10
+          },
+          {
+            "star": 30
+          },
+          {
+            "star": 50
+          }
+        ]
+      }
+    },
+        {
+	  	"level": 10,
+      "isUnlock": false,
+      "star": 0,
+      "bullet": 5,
+      "endGame": {
+        "bullet": 3,
+        "hostage": 1,
+        "cashReward": [
+          {
+            "star": 1
+          },
+          {
+            "star": 10
+          },
+          {
+            "star": 30
+          },
+          {
+            "star": 50
+          }
+        ]
+      }
+    },
+        {
+	  	"level": 11,
+      "isUnlock": false,
+      "star": 0,
+      "bullet": 5,
+      "endGame": {
+        "bullet": 1,
+        "hostage": 1,
+        "cashReward": [
+          {
+            "star": 1
+          },
+          {
+            "star": 10
+          },
+          {
+            "star": 30
+          },
+          {
+            "star": 50
+          }
+        ]
+      }
+    },
+    {
+	  	"level": 12,
+      "isUnlock": false,
+      "star": 0,
+      "bullet": 5,
+      "endGame": {
+        "bullet": 1,
+        "hostage": 1,
+        "cashReward": [
+          {
+            "star": 1
+          },
+          {
+            "star": 10
+          },
+          {
+            "star": 30
+          },
+          {
+            "star": 50
+          }
+        ]
+      }
+    },
+    {
+	  	"level": 13,
+      "isUnlock": false,
+      "star": 0,
+      "bullet": 5,
+      "endGame": {
+        "bullet": 2,
+        "hostage": 1,
+        "cashReward": [
+          {
+            "star": 1
+          },
+          {
+            "star": 10
+          },
+          {
+            "star": 30
+          },
+          {
+            "star": 50
+          }
+        ]
+      }
+    },
+    {
+	  	"level": 14,
+      "isUnlock": false,
+      "star": 0,
+      "bullet": 5,
+      "endGame": {
+        "bullet": 2,
+        "hostage": 0,
+        "cashReward": [
+          {
+            "star": 1
+          },
+          {
+            "star": 10
+          },
+          {
+            "star": 30
+          },
+          {
+            "star": 50
+          }
+        ]
+      }
+    },
+    {
+	  	"level": 15,
+      "isUnlock": false,
+      "star": 0,
+      "bullet": 5,
+      "endGame": {
+        "bullet": 3,
+        "hostage": 2,
+        "cashReward": [
+          {
+            "star": 1
+          },
+          {
+            "star": 10
+          },
+          {
+            "star": 30
+          },
+          {
+            "star": 50
+          }
+        ]
+      }
+    },
+    {
+	  	"level": 16,
+      "isUnlock": false,
+      "star": 0,
+      "bullet": 5,
+      "endGame": {
+        "bullet": 1,
+        "hostage": 1,
+        "cashReward": [
+          {
+            "star": 1
+          },
+          {
+            "star": 10
+          },
+          {
+            "star": 30
+          },
+          {
+            "star": 50
+          }
+        ]
+      }
+    },
+    {
+	  	"level": 17,
+      "isUnlock": false,
+      "star": 0,
+      "bullet": 5,
+      "endGame": {
+        "bullet": 1,
+        "hostage": 1,
+        "cashReward": [
+          {
+            "star": 1
+          },
+          {
+            "star": 10
+          },
+          {
+            "star": 30
+          },
+          {
+            "star": 50
+          }
+        ]
+      }
+    },
+    {
+	  	"level": 18,
+      "isUnlock": false,
+      "star": 0,
+      "bullet": 5,
+      "endGame": {
+        "bullet": 1,
+        "hostage": 1,
+        "cashReward": [
+          {
+            "star": 1
+          },
+          {
+            "star": 10
+          },
+          {
+            "star": 30
+          },
+          {
+            "star": 50
+          }
+        ]
+      }
+    },
+    {
+	  	"level": 19,
+      "isUnlock": false,
+      "star": 0,
+      "bullet": 5,
+      "endGame": {
+        "bullet": 1,
+        "hostage": 2,
+        "cashReward": [
+          {
+            "star": 1
+          },
+          {
+            "star": 10
+          },
+          {
+            "star": 30
+          },
+          {
+            "star": 50
+          }
+        ]
+      }
+    },
+    {
+		  "level": 20,
+      "isUnlock": false,
+      "star": 0,
+      "bullet": 5,
+      "endGame": {
+        "bullet": 3,
+        "hostage": 2,
+        "cashReward": [
+          {
+            "star": 1
+          },
+          {
+            "star": 10
+          },
+          {
+            "star": 30
+          },
+          {
+            "star": 50
+          }
+        ]
+      }
+    },
+    {
+		  "level": 21,
+      "isUnlock": false,
+      "star": 0,
+      "bullet": 5,
+      "endGame": {
+        "bullet": 1,
+        "hostage": 1,
+        "cashReward": [
+          {
+            "star": 1
+          },
+          {
+            "star": 10
+          },
+          {
+            "star": 30
+          },
+          {
+            "star": 50
+          }
+        ]
+      }
+    },
+    {
+		  "level": 22,
+      "isUnlock": false,
+      "star": 0,
+      "bullet": 5,
+      "endGame": {
+        "bullet": 1,
+        "hostage": 1,
+        "cashReward": [
+          {
+            "star": 1
+          },
+          {
+            "star": 10
+          },
+          {
+            "star": 30
+          },
+          {
+            "star": 50
+          }
+        ]
+      }
+    },
+    {
+		  "level": 23,
+      "isUnlock": false,
+      "star": 0,
+      "bullet": 5,
+      "endGame": {
+        "bullet": 1,
+        "hostage": 2,
+        "cashReward": [
+          {
+            "star": 1
+          },
+          {
+            "star": 10
+          },
+          {
+            "star": 30
+          },
+          {
+            "star": 50
+          }
+        ]
+      }
+    },
+    {
+		  "level": 24,
+      "isUnlock": false,
+      "star": 0,
+      "bullet": 5,
+      "endGame": {
+        "bullet": 1,
+        "hostage": 2,
+        "cashReward": [
+          {
+            "star": 1
+          },
+          {
+            "star": 10
+          },
+          {
+            "star": 30
+          },
+          {
+            "star": 50
+          }
+        ]
+      }
+    },
+    {
+		  "level": 25,
+      "isUnlock": false,
+      "star": 0,
+      "bullet": 5,
+      "endGame": {
+        "bullet": 3,
+        "hostage": 1,
+        "cashReward": [
+          {
+            "star": 1
+          },
+          {
+            "star": 10
+          },
+          {
+            "star": 30
+          },
+          {
+            "star": 50
+          }
+        ]
+      }
+    },
+    {
+      "level": 26,
+      "isUnlock": false,
+      "star": 0,
+      "bullet": 5,
+      "endGame": {
+        "bullet": 1,
+        "hostage": 1,
+        "cashReward": [
+          {
+            "star": 1
+          },
+          {
+            "star": 10
+          },
+          {
+            "star": 30
+          },
+          {
+            "star": 50
+          }
+        ]
+      }
+    },
+    {
+      "level": 27,
+      "isUnlock": false,
+      "star": 0,
+      "bullet": 5,
+      "endGame": {
+        "bullet": 1,
+        "hostage": 1,
+        "cashReward": [
+          {
+            "star": 1
+          },
+          {
+            "star": 10
+          },
+          {
+            "star": 30
+          },
+          {
+            "star": 50
+          }
+        ]
+      }
+    },
+    {
+      "level": 28,
+      "isUnlock": false,
+      "star": 0,
+      "bullet": 5,
+      "endGame": {
+        "bullet": 2,
+        "hostage": 1,
+        "cashReward": [
+          {
+            "star": 1
+          },
+          {
+            "star": 10
+          },
+          {
+            "star": 30
+          },
+          {
+            "star": 50
+          }
+        ]
+      }
+    },
+    {
+      "level": 29,
+      "isUnlock": false,
+      "star": 0,
+      "bullet": 5,
+      "endGame": {
+        "bullet": 2,
+        "hostage": 1,
+        "cashReward": [
+          {
+            "star": 1
+          },
+          {
+            "star": 10
+          },
+          {
+            "star": 30
+          },
+          {
+            "star": 50
+          }
+        ]
+      }
+    },
+    {
+      "level": 30,
+      "isUnlock": false,
+      "star": 0,
+      "bullet": 5,
+      "endGame": {
+        "bullet": 3,
+        "hostage": 1,
+        "cashReward": [
+          {
+            "star": 1
+          },
+          {
+            "star": 10
+          },
+          {
+            "star": 30
+          },
+          {
+            "star": 50
+          }
+        ]
+      }
+    },
+    {
+      "level": 31,
+      "isUnlock": false,
+      "star": 0,
+      "bullet": 5,
+      "endGame": {
+        "bullet": 3,
+        "hostage": 1,
+        "cashReward": [
+          {
+            "star": 1
+          },
+          {
+            "star": 10
+          },
+          {
+            "star": 30
+          },
+          {
+            "star": 50
+          }
+        ]
+      }
+    },
+    {
+      "level": 32,
+      "isUnlock": false,
+      "star": 0,
+      "bullet": 5,
+      "endGame": {
+        "bullet": 3,
+        "hostage": 1,
+        "cashReward": [
+          {
+            "star": 1
+          },
+          {
+            "star": 10
+          },
+          {
+            "star": 30
+          },
+          {
+            "star": 50
+          }
+        ]
+      }
+    },
+    {
+      "level": 33,
+      "isUnlock": false,
+      "star": 0,
+      "bullet": 5,
+      "endGame": {
+        "bullet": 3,
+        "hostage": 1,
+        "cashReward": [
+          {
+            "star": 1
+          },
+          {
+            "star": 10
+          },
+          {
+            "star": 30
+          },
+          {
+            "star": 50
+          }
+        ]
+      }
+    },
+    {
+      "level": 34,
+      "isUnlock": false,
+      "star": 0,
+      "bullet": 5,
+      "endGame": {
+        "bullet": 3,
+        "hostage": 1,
+        "cashReward": [
+          {
+            "star": 1
+          },
+          {
+            "star": 10
+          },
+          {
+            "star": 30
+          },
+          {
+            "star": 50
+          }
+        ]
+      }
+    },
+    {
+      "level": 35,
+      "isUnlock": false,
+      "star": 0,
+      "bullet": 5,
+      "endGame": {
+        "bullet": 3,
+        "hostage": 1,
+        "cashReward": [
+          {
+            "star": 1
+          },
+          {
+            "star": 10
+          },
+          {
+            "star": 30
+          },
+          {
+            "star": 50
+          }
+        ]
+      }
+    },
+    {
+      "level": 36,
+      "isUnlock": false,
+      "star": 0,
+      "bullet": 5,
+      "endGame": {
+        "bullet": 3,
+        "hostage": 1,
+        "cashReward": [
+          {
+            "star": 1
+          },
+          {
+            "star": 10
+          },
+          {
+            "star": 30
+          },
+          {
+            "star": 50
+          }
+        ]
+      }
+    },
+    {
+      "level": 37,
+      "isUnlock": false,
+      "star": 0,
+      "bullet": 5,
+      "endGame": {
+        "bullet": 3,
+        "hostage": 1,
+        "cashReward": [
+          {
+            "star": 1
+          },
+          {
+            "star": 10
+          },
+          {
+            "star": 30
+          },
+          {
+            "star": 50
+          }
+        ]
+      }
+    },
+    {
+      "level": 38,
+      "isUnlock": false,
+      "star": 0,
+      "bullet": 5,
+      "endGame": {
+        "bullet": 3,
+        "hostage": 1,
+        "cashReward": [
+          {
+            "star": 1
+          },
+          {
+            "star": 10
+          },
+          {
+            "star": 30
+          },
+          {
+            "star": 50
+          }
+        ]
+      }
+    },
+    {
+      "level": 39,
+      "isUnlock": false,
+      "star": 0,
+      "bullet": 5,
+      "endGame": {
+        "bullet": 3,
+        "hostage": 1,
+        "cashReward": [
+          {
+            "star": 1
+          },
+          {
+            "star": 10
+          },
+          {
+            "star": 30
+          },
+          {
+            "star": 50
+          }
+        ]
+      }
+    },
+    {
+      "level": 40,
+      "isUnlock": false,
+      "star": 0,
+      "bullet": 5,
+      "endGame": {
+        "bullet": 3,
+        "hostage": 1,
+        "cashReward": [
+          {
+            "star": 1
+          },
+          {
+            "star": 10
+          },
+          {
+            "star": 30
+          },
+          {
+            "star": 50
+          }
+        ]
+      }
+    },
+    {
+      "level": 41,
+      "isUnlock": false,
+      "star": 0,
+      "bullet": 5,
+      "endGame": {
+        "bullet": 3,
+        "hostage": 1,
+        "cashReward": [
+          {
+            "star": 1
+          },
+          {
+            "star": 10
+          },
+          {
+            "star": 30
+          },
+          {
+            "star": 50
+          }
+        ]
+      }
+    },
+    {
+      "level": 42,
+      "isUnlock": false,
+      "star": 0,
+      "bullet": 5,
+      "endGame": {
+        "bullet": 3,
+        "hostage": 1,
+        "cashReward": [
+          {
+            "star": 1
+          },
+          {
+            "star": 10
+          },
+          {
+            "star": 30
+          },
+          {
+            "star": 50
+          }
+        ]
+      }
+    },
+    {
+      "level": 43,
+      "isUnlock": false,
+      "star": 0,
+      "bullet": 5,
+      "endGame": {
+        "bullet": 3,
+        "hostage": 1,
+        "cashReward": [
+          {
+            "star": 1
+          },
+          {
+            "star": 10
+          },
+          {
+            "star": 30
+          },
+          {
+            "star": 50
+          }
+        ]
+      }
+    },
+    {
+      "level": 44,
+      "isUnlock": false,
+      "star": 0,
+      "bullet": 5,
+      "endGame": {
+        "bullet": 3,
+        "hostage": 1,
+        "cashReward": [
+          {
+            "star": 1
+          },
+          {
+            "star": 10
+          },
+          {
+            "star": 30
+          },
+          {
+            "star": 50
+          }
+        ]
+      }
+    },
+    {
+      "level": 45,
+      "isUnlock": false,
+      "star": 0,
+      "bullet": 5,
+      "endGame": {
+        "bullet": 3,
+        "hostage": 1,
+        "cashReward": [
+          {
+            "star": 1
+          },
+          {
+            "star": 10
+          },
+          {
+            "star": 30
+          },
+          {
+            "star": 50
+          }
+        ]
+      }
+    },
+    {
+      "level": 46,
+      "isUnlock": false,
+      "star": 0,
+      "bullet": 5,
+      "endGame": {
+        "bullet": 3,
+        "hostage": 1,
+        "cashReward": [
+          {
+            "star": 1
+          },
+          {
+            "star": 10
+          },
+          {
+            "star": 30
+          },
+          {
+            "star": 50
+          }
+        ]
+      }
+    },
+    {
+      "level": 47,
+      "isUnlock": false,
+      "star": 0,
+      "bullet": 5,
+      "endGame": {
+        "bullet": 3,
+        "hostage": 1,
+        "cashReward": [
+          {
+            "star": 1
+          },
+          {
+            "star": 10
+          },
+          {
+            "star": 30
+          },
+          {
+            "star": 50
+          }
+        ]
+      }
+    },
+    {
+      "level": 48,
+      "isUnlock": false,
+      "star": 0,
+      "bullet": 5,
+      "endGame": {
+        "bullet": 3,
+        "hostage": 1,
+        "cashReward": [
+          {
+            "star": 1
+          },
+          {
+            "star": 10
+          },
+          {
+            "star": 30
+          },
+          {
+            "star": 50
+          }
+        ]
+      }
+    },
+    {
+      "level": 49,
+      "isUnlock": false,
+      "star": 0,
+      "bullet": 5,
+      "endGame": {
+        "bullet": 3,
+        "hostage": 1,
+        "cashReward": [
+          {
+            "star": 1
+          },
+          {
+            "star": 10
+          },
+          {
+            "star": 30
+          },
+          {
+            "star": 50
+          }
+        ]
+      }
+    },
+    {
+      "level": 50,
+      "isUnlock": false,
+      "star": 0,
+      "bullet": 5,
+      "endGame": {
+        "bullet": 3,
+        "hostage": 1,
+        "cashReward": [
+          {
+            "star": 1
+          },
+          {
+            "star": 10
+          },
+          {
+            "star": 30
+          },
+          {
+            "star": 50
+          }
+        ]
+      }
+    }
+  ]
+}
