@@ -96,7 +96,7 @@ public class LaserScript : MonoBehaviour
             {
                 lineRenderer.positionCount += 1;
                 lineRenderer.SetPosition(lineRenderer.positionCount - 1, new Vector3(hit.point.x, hit.point.y, 0));
-                if (hit.collider.name == GameContracts.TNT_NAME)
+                if (hit.collider.GetComponent<PoisionObject>())
                 {
                     hittingCharacter = true;
                     break;

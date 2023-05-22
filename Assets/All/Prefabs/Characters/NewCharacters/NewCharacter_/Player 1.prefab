@@ -113,7 +113,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c27a2582a6e49ae48a9b7f5d6ac5ac16, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotateSpeed: 0.5
   twoBoneIKConstraint: {fileID: 4507680809708091521}
   target: {fileID: 3414613243236657846}
   speedRotate: 5
@@ -162,7 +161,7 @@ MonoBehaviour:
   ragdollDeath: {fileID: 8617410385181743351}
   hp: 1
   isDeath: 0
-  state: 2
+  state: 3
   showSlider: 0
   bloodEffect: {fileID: 4464893211715183357, guid: ad900d3931713f9499a03307d4bac445, type: 3}
   bloodEffectLoop: {fileID: 4464893211715183357, guid: ad900d3931713f9499a03307d4bac445, type: 3}
@@ -260,10 +259,10 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 0.24127069
-  m_Height: 3.3662167
+  m_Radius: 0.96040523
+  m_Height: 4.6847024
   m_Direction: 1
-  m_Center: {x: 2.135071e-17, y: 1.7258081, z: -0.0063100755}
+  m_Center: {x: 0.34748682, y: 2.385051, z: 0.36533722}
 --- !u!114 &125021114886173662
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -307,7 +306,7 @@ MonoBehaviour:
   listWeapons:
   - {fileID: 8875573609131908359, guid: 121397e79bf6df149909c228640eeb70, type: 3}
   - {fileID: 1891756971455823735, guid: e382e52d48f42264fa4a833b36e10cbe, type: 3}
-  weaponID: 2
+  weaponID: 1
   head: {fileID: 3414613242515278664}
   body: {fileID: 3414613242321166570}
   rightHand: {fileID: 4507680809197079369}
@@ -722,7 +721,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   healthBar: {fileID: 4507680808610219376}
-  speedHealthBar: 5
 --- !u!1 &4507680808610219377
 GameObject:
   m_ObjectHideFlags: 0

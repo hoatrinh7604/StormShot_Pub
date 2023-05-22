@@ -149,7 +149,7 @@ public class PlayerController : CharacterController
         else
         {
             if (transform.position.y >= collision.transform.position.y) return;
-            if (collision.gameObject.name == GameContracts.TNT_NAME) return;
+            if (collision.gameObject.GetComponent<PoisionObject>()) return;
             OnColliderHandle(collision);
         }
     }
@@ -178,7 +178,7 @@ public class PlayerController : CharacterController
         }
         else
         {
-            if (collision.gameObject.name == GameContracts.EXPLOSION_NAME)
+            if (collision.gameObject.GetComponent<ExplosionController>())
             {
                 StartCoroutine(DisableAfterTime());
                 BreakCharacter(collision);

@@ -15,7 +15,7 @@ public class BossController : EnemyController
     override public void OnColliderWithBullet(Collision collision)
     {
         if (isDeath) return;
-        if (collision.gameObject.name == GameContracts.EXPLOSION_NAME)
+        if (collision.gameObject.GetComponent<ExplosionController>())
         {
             StartCoroutine(DisableAfterTime(0));
             BreakCharacter(collision);
@@ -41,7 +41,7 @@ public class BossController : EnemyController
         else
         {
             if (transform.position.y >= collision.transform.position.y) return;
-            if (collision.gameObject.name == GameContracts.TNT_NAME) return;
+            if (collision.gameObject.GetComponent<PoisionObject>()) return;
             OnColliderHandle(collision);
             Hitted();
         }

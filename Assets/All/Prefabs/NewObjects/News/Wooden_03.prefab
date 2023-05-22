@@ -260,6 +260,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rigBody: {fileID: 0}
-  effect: {fileID: 3493871596299938405, guid: 54a5b856f5c881140b0006d5a49b6cb3, type: 3}
+  effect: {fileID: 3151791017703268682, guid: 36326bb65369f9f488aff5b673df9990, type: 3}
   hasEffect: 1
   brokenObj: {fileID: 3493871596299938405, guid: 54a5b856f5c881140b0006d5a49b6cb3, type: 3}

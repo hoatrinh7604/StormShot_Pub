@@ -9,4 +9,9 @@ public class SawController : ObjectController
         ID = (int)ItemObject.SAW;
         type = (int)Barrel.HARD;
     }
+
+    override public void OnCollisionEnter(Collision collision)
+    {
+        
+    }
 }

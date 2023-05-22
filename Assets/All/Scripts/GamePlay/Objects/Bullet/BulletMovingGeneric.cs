@@ -11,6 +11,7 @@ public class BulletMovingGeneric : MonoBehaviour
     [SerializeField] float speed;
     [SerializeField] Transform crosshair;
     [SerializeField] int numberOfCol = 0;
+    [SerializeField] float timeEnableCollision = 0.1f;
 
     private bool canEnableCollision = true;
     private Vector3 target;
@@ -20,6 +21,13 @@ public class BulletMovingGeneric : MonoBehaviour
     {
         SetPreValue();
         //Destroy(this.gameObject, 5f);
+        col.enabled = false;
+    }
+
+    private IEnumerator Start()
+    {
+        yield return new WaitForSeconds(timeEnableCollision);
+        col.enabled = true;
     }
 
     public void SetPreValue()
@@ -31,7 +39,7 @@ public class BulletMovingGeneric : MonoBehaviour
     }
 
     // Update is called once per frame
-    void LateUpdate()
+    void FixedUpdate()
     {
         time -= Time.deltaTime;
         if(time < 0)

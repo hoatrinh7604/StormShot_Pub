@@ -35,8 +35,6 @@ public class RagdollDeath : MonoBehaviour
 
     private void ToggleRagdoll(bool state)
     {
-        
-
         foreach(var rb in ragdollBodies)
         {
             rb.isKinematic = !state;
@@ -47,7 +45,7 @@ public class RagdollDeath : MonoBehaviour
             col.enabled = state;
             SetTrigger(!state);
         }
-
+        ragdollColliders[0].enabled = false;
         animator.enabled = !state;
     }   
     

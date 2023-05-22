@@ -12,6 +12,7 @@ public class WeaponEnemy : MonoBehaviour
     {
         if (!itemEquip) return;
         var rig = itemEquip.AddComponent<Rigidbody>();
+        rig.interpolation = RigidbodyInterpolation.Interpolate;
         rig.AddForce(new Vector3(0, 5, 0));
         itemEquip.transform.parent = null;
         itemEquip.transform.Rotate(new Vector3(0, 0, 90));

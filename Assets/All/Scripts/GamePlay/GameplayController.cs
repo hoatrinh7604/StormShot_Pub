@@ -430,7 +430,8 @@ public class GameplayController : MonoBehaviour
         int stageLog = PlayerPrefs.GetInt("CurrentProgress");
         //MonsterSDK.LogSDK.Scripts.GameAnalyticsV2.LogStageStart(stageLog, (stageLog % 5 == 0) ? "Boss" : "Normal");
 
-        AdsInitializer.Instance.banner.LoadAd();
+        if(AdsInitializer.Instance)
+            AdsInitializer.Instance.banner.LoadAd();
     }
 
     public void ItemEffectControl(GameData data)
@@ -642,11 +643,11 @@ public class GameplayController : MonoBehaviour
     {
         //int star = missionsController.GetStarsResult(numberOfEnemy, bulletQuantity, numberOfHostage);
         int star = 1;
-        if(bulletQuantity >= 4)
+        if(bulletQuantity >= 5 - baseEnemies)
         {
             star = 3;
         }
-        else if (bulletQuantity >= 2)
+        else if (bulletQuantity >= 4 - baseEnemies)
         {
             star = 2;
         }

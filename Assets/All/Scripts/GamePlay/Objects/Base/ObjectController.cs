@@ -6,6 +6,7 @@ using UnityEngine;
 public class ObjectController : MonoBehaviour, Object
 {
     public Rigidbody rigBody;
+    public float velocityMoving = 5;
 
     public int ID { get; protected set; }
     public int type { get; protected set; }
@@ -37,12 +38,12 @@ public class ObjectController : MonoBehaviour, Object
 
     public bool IsObjectMoving()
     {
-        return velocity > 5;
+        return velocity > velocityMoving;
     }
 
     virtual public bool IsMoving()
     {
-        return velocity > 5;
+        return velocity > velocityMoving;
     }
 
     virtual public void OnDestroyObject()

@@ -9,10 +9,16 @@ public class ChainController : ObjectController
 
     override public void OnTriggerEnter(Collider other)
     {
+        print("trigger Ondamage: " + other.gameObject.name);
         if(other.tag == GameContracts.DAMAGE_TAG)
         {
             OnDamage(other);
         }
+    }
+
+    override public void OnCollisionEnter(Collision collision)
+    {
+        print("collision Ondamage: " + collision.gameObject.name);
     }
 
     public void OnCollisionWithCharacter()
@@ -28,7 +34,8 @@ public class ChainController : ObjectController
         AddForce(other.ClosestPoint(transform.position));
 
         // On Damage of TNT
-        if(other.gameObject.name == GameContracts.EXPLOSION_NAME)
+        //if(other.gameObject.name == GameContracts.EXPLOSION_NAME)
+        if(other.gameObject.GetComponent<ExplosionController>())
         {
             Destroy(this.gameObject);
             return;

@@ -91,7 +91,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rigBody: {fileID: 0}
-  effect: {fileID: 3493871596299938405, guid: 54a5b856f5c881140b0006d5a49b6cb3, type: 3}
+  effect: {fileID: 3151791017703268682, guid: 36326bb65369f9f488aff5b673df9990, type: 3}
   hasEffect: 1
   brokenObj: {fileID: 3493871596299938405, guid: 54a5b856f5c881140b0006d5a49b6cb3, type: 3}
 --- !u!1 &5170758238806840804
@@ -251,7 +251,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 3
+  m_SortingOrder: 2
   m_Sprite: {fileID: -669424920, guid: 88963fea186b99e4b89f4d1150fcc67e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0

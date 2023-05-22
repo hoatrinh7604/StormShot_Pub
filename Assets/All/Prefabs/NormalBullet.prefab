@@ -97,7 +97,7 @@ SphereCollider:
   m_GameObject: {fileID: 5828586607898150024}
   m_Material: {fileID: 13400000, guid: cae4fef58a7164f44b1e5ba2d0d66d16, type: 2}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
@@ -132,6 +132,7 @@ MonoBehaviour:
   speed: 40
   crosshair: {fileID: 0}
   numberOfCol: 0
+  timeEnableCollision: 0.05
   time: 5
   explosionEff: {fileID: 190108805838455312, guid: 9aa7673addfb79e468a7872256109fcc, type: 3}
 --- !u!96 &5828586607898150128

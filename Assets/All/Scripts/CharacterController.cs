@@ -111,7 +111,8 @@ public class CharacterController : MonoBehaviour
     #region Physic control
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.name == GameContracts.EXPLOSION_NAME)
+        //if (other.gameObject.name == GameContracts.EXPLOSION_NAME)
+        if (other.gameObject.GetComponent<ExplosionController>())
         {
             BreakCharacter(null);
         }
@@ -125,7 +126,7 @@ public class CharacterController : MonoBehaviour
             return;
         }
 
-        if (collision.gameObject.tag == GameContracts.TRAP_TAG || collision.gameObject.tag == GameContracts.SAW_NAME)
+        if (collision.gameObject.tag == GameContracts.TRAP_TAG || collision.gameObject.GetComponent<SawController>())
         {
             OnColliderWithBarrier(collision);
             return;
@@ -144,7 +145,8 @@ public class CharacterController : MonoBehaviour
     virtual public void OnColliderWithBullet(Collision collision)
     {
         if (isDeath) return;
-        if (collision.gameObject.name == GameContracts.EXPLOSION_NAME)
+        //if (collision.gameObject.name == GameContracts.EXPLOSION_NAME)
+        if (collision.gameObject.GetComponent<ExplosionController>())
         {
             BreakCharacter(collision);
         }
@@ -159,15 +161,17 @@ public class CharacterController : MonoBehaviour
         if (isDeath) return;
 
         // Check pos
-        if (collision.gameObject.name == GameContracts.SAW_NAME)
+        if (collision.gameObject.GetComponent<SawController>())
         {
-            StartCoroutine(DisableAfterTime(0));
-            BrokenCharacter(collision);
+            //StartCoroutine(DisableAfterTime(0));
+            //BrokenCharacter(collision);
+            OnColliderHandle(collision);
         }
         else
         {
             if (transform.position.y >= collision.transform.position.y) return;
-            if (collision.gameObject.name == GameContracts.TNT_NAME) return;
+            //if (collision.gameObject.name == GameContracts.TNT_NAME) return;
+            if (collision.gameObject.GetComponent<PoisionObject>()) return;
             OnColliderHandle(collision);
         }
     }
