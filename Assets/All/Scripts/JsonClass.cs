@@ -41,6 +41,7 @@ namespace JsonClass
         public int quantity;
         public int price;
         public int isEquip;
+        public string info;
     }
     #endregion
 }

@@ -39,7 +39,11 @@ public enum Bullets
 public enum ItemType
 {
     AMMO = 1,
-    RIFLE
+    RIFLE = 2,
+    RIFLE2 = 3,
+    SHOGUN = 4,
+    SNIPER = 5,
+    ROCKET = 6
 }
 
 public enum AnimState

@@ -6,14 +6,48 @@
       "type": 1,
       "quantity": 0,
       "price": 500,
-      "isEquip": 0
+      "isEquip": 0,
+      "info": "Gain more 2 ammos at first play!"
     },
     {
       "name": "Rifle",
       "type": 2,
       "quantity": 0,
       "price": 500,
-      "isEquip": 0
+      "isEquip": 0,
+      "info": "This ammo can move through obstangles but only kill one character!"
+    },
+    {
+      "name": "Rifle2",
+      "type": 3,
+      "quantity": 0,
+      "price": 1000,
+      "isEquip": 0,
+      "info": "This ammo can move through obstangles and can kill more characters!"
+    },
+    {
+      "name": "Shogun",
+      "type": 4,
+      "quantity": 0,
+      "price": 1500,
+      "isEquip": 0,
+      "info": "This ammo will explosion after a time, then init more ammos!"
+    },
+    {
+      "name": "Sniper",
+      "type": 5,
+      "quantity": 0,
+      "price": 2500,
+      "isEquip": 0,
+      "info": "This ammo can kill any character when tap them!"
+    },
+    {
+      "name": "Rocket",
+      "type": 6,
+      "quantity": 0,
+      "price": 5000,
+      "isEquip": 0,
+      "info": "This ammo will make a explosion area when collision!"
     }
   ],
   "Levels": [

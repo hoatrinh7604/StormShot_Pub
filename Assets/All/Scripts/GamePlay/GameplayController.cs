@@ -436,7 +436,7 @@ public class GameplayController : MonoBehaviour
 
     public void ItemEffectControl(GameData data)
     {
-        playerController.EquipWeapon(1); // Equip Gun base
+        playerController.EquipWeapon(6); // Equip Gun base
         foreach (var i in data.SupportItems)
         {
             if (i.type == (int)ItemType.AMMO)
@@ -458,6 +458,54 @@ public class GameplayController : MonoBehaviour
                 if (i.isEquip == 1 && i.quantity >= 1)
                 {
                     playerController.EquipWeapon((int)ItemType.RIFLE);
+                    gameDataController.AddMoreItemByType(i.type, -1);
+                }
+                else
+                {
+                    gameDataController.UpdateEquipmentState(i.type, 0);
+                }
+            }
+            else if (i.type == (int)ItemType.RIFLE2)
+            {
+                if (i.isEquip == 1 && i.quantity >= 1)
+                {
+                    playerController.EquipWeapon((int)ItemType.RIFLE2);
+                    gameDataController.AddMoreItemByType(i.type, -1);
+                }
+                else
+                {
+                    gameDataController.UpdateEquipmentState(i.type, 0);
+                }
+            }
+            else if (i.type == (int)ItemType.SHOGUN)
+            {
+                if (i.isEquip == 1 && i.quantity >= 1)
+                {
+                    playerController.EquipWeapon((int)ItemType.SHOGUN);
+                    gameDataController.AddMoreItemByType(i.type, -1);
+                }
+                else
+                {
+                    gameDataController.UpdateEquipmentState(i.type, 0);
+                }
+            }
+            else if (i.type == (int)ItemType.SNIPER)
+            {
+                if (i.isEquip == 1 && i.quantity >= 1)
+                {
+                    playerController.EquipWeapon((int)ItemType.SNIPER);
+                    gameDataController.AddMoreItemByType(i.type, -1);
+                }
+                else
+                {
+                    gameDataController.UpdateEquipmentState(i.type, 0);
+                }
+            }
+            else if (i.type == (int)ItemType.ROCKET)
+            {
+                if (i.isEquip == 1 && i.quantity >= 1)
+                {
+                    playerController.EquipWeapon((int)ItemType.ROCKET);
                     gameDataController.AddMoreItemByType(i.type, -1);
                 }
                 else

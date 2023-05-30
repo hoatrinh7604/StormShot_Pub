@@ -289,6 +289,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rigBody: {fileID: 0}
+  velocityMoving: 5
 --- !u!114 &6036971710641666413
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -306,6 +307,10 @@ MonoBehaviour:
   listWeapons:
   - {fileID: 8875573609131908359, guid: 121397e79bf6df149909c228640eeb70, type: 3}
   - {fileID: 1891756971455823735, guid: e382e52d48f42264fa4a833b36e10cbe, type: 3}
+  - {fileID: 2777624761567434397, guid: ab0e7800593508949a231ccebef58a18, type: 3}
+  - {fileID: 8910270074703782737, guid: e4e2f2ecfcc406c46915a0cb0cb516d1, type: 3}
+  - {fileID: 1995729777873519422, guid: c080c1927caeb9041bcc13c7ac497f6b, type: 3}
+  - {fileID: 8023422634932834394, guid: 87fa0fe5b1b348f43841b92e778bdbda, type: 3}
   weaponID: 1
   head: {fileID: 3414613242515278664}
   body: {fileID: 3414613242321166570}

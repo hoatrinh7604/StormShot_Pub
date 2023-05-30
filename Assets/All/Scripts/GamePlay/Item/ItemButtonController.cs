@@ -16,10 +16,13 @@ public class ItemButtonController : MonoBehaviour
     [SerializeField] TextMeshProUGUI textName;
     [SerializeField] TextMeshProUGUI textQuantity;
     [SerializeField] TextMeshProUGUI textPrice;
+    [SerializeField] GameObject infoPopup;
+
     //string name;
     int quantity;
     int type;
     int price;
+    string info;
 
     [SerializeField] Button addMoreButton;
     private MainMenuItemController mainMenuItemController;
@@ -44,10 +47,12 @@ public class ItemButtonController : MonoBehaviour
         quantity = item.quantity;
         price = item.price;
         isSelected = item.isEquip == 1;
+        info = item.info;
 
         textName.text = name;
         textQuantity.text = quantity.ToString();
         textPrice.text = price.ToString();
+        infoPopup.GetComponentInChildren<TextMeshProUGUI>().text = info;
 
         if (quantity <= 0)
         {
@@ -95,6 +100,8 @@ public class ItemButtonController : MonoBehaviour
 
     public void OnClick()
     {
+        infoPopup.gameObject.SetActive(true);
+
         if (quantity <= 0) return;
 
         isSelected = !isSelected;
