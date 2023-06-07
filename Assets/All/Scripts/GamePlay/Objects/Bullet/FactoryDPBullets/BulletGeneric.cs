@@ -11,7 +11,7 @@ public enum BulletType
 public interface BulletGeneric
 {
     public int GetBulletType();
-    public void SetTarget(Transform target);
+    public void SetTarget(Transform target, Transform shotPoint);
     public void AddForce();
 
     public void Explosion();

@@ -100,7 +100,7 @@ public class ItemButtonController : MonoBehaviour
 
     public void OnClick()
     {
-        infoPopup.gameObject.SetActive(true);
+        infoPopup.gameObject.GetComponent<ItemPopupInfo>().ShowInfo();
 
         if (quantity <= 0) return;
 

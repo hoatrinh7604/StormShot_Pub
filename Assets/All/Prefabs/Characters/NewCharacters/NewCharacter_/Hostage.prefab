@@ -1198,6 +1198,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rigBody: {fileID: 0}
+  velocityMoving: 5
 --- !u!1 &8919505973642281397
 GameObject:
   m_ObjectHideFlags: 0
@@ -1250,7 +1251,7 @@ SkinnedMeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: e0c9c9a5c1fb94449b30244f7836cf43, type: 2}
+  - {fileID: 2100000, guid: 9bd70c8a827169146b767dc10c49004f, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1359,7 +1360,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: e0c9c9a5c1fb94449b30244f7836cf43, type: 2}
+  - {fileID: 2100000, guid: 9bd70c8a827169146b767dc10c49004f, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

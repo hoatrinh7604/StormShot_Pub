@@ -167,6 +167,18 @@ public class PlayerController : CharacterController
         SoundController.Instance.PlayAudio(SoundController.Instance.playerDeath, PlayerPrefs.GetFloat("EffectSound", 1), false);
     }
 
+    override public void Death(Vector3 position)
+    {
+        if (isDeath) return;
+        base.Death(position);
+        col.enabled = false;
+        canFlip = false;
+        GameplayController.Instance.PlayerDeath();
+
+        if (SoundController.Instance == null) return;
+        SoundController.Instance.PlayAudio(SoundController.Instance.playerDeath, PlayerPrefs.GetFloat("EffectSound", 1), false);
+    }
+
     override public void OnColliderWithBullet(Collision collision)
     {
         if (isDeath) return;

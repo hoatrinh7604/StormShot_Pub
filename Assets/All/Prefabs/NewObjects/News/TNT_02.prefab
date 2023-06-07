@@ -47,8 +47,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 3.1110277, y: 1.7153444, z: 5}
-  m_Center: {x: 0.089856625, y: 0.0010142326, z: 0.05}
+  m_Size: {x: 3.1110277, y: 2.351616, z: 5}
+  m_Center: {x: 0.089856625, y: 0.0010147095, z: 0.049999952}
 --- !u!54 &492564913805822330
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -78,6 +78,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rigBody: {fileID: 0}
+  velocityMoving: 5
   explosionObj: {fileID: 8016218211631781172, guid: 1a15913838ab8674688afb77ea958b3e, type: 3}
   effect: {fileID: 2433282508537954060, guid: d01e2880b00e7d640920dae6bc0b8db9, type: 3}
   hasEffect: 1
@@ -251,7 +252,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 3
+  m_SortingOrder: 4
   m_Sprite: {fileID: 2141616150, guid: 2bf2fcf83a6d9654c87ad3ffebc6d816, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0

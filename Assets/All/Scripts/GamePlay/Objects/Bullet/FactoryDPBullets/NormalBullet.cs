@@ -11,9 +11,9 @@ public class NormalBullet : BulletMovingGeneric, Object, BulletGeneric
         return (int)BulletType.NORMAL;
     }
 
-    public void SetTarget(Transform target)
+    public void SetTarget(Transform target, Transform shotPoint)
     {
-        SetBaseTarget(target);
+        SetBaseTarget(target, shotPoint);
     }
 
     public void AddForce()

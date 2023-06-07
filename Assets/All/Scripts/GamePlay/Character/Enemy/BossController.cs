@@ -62,6 +62,15 @@ public class BossController : EnemyController
         SoundController.Instance.StopAudio(SoundController.Instance.bossSmile);
     }
 
+    override public void Death(Vector3 position)
+    {
+        if (isDeath) return;
+        base.Death(position);
+
+        if (SoundController.Instance == null) return;
+        SoundController.Instance.StopAudio(SoundController.Instance.bossSmile);
+    }
+
     public void Hitted()
     {
         //GameElement.Instance.turnBaseMode.BlockBoss(1);

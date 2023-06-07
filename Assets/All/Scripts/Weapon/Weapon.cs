@@ -16,7 +16,7 @@ public class Weapon : MonoBehaviour
         
     }
 
-    public void Shoot()
+    virtual public void Shoot()
     {
         var newBullet = Instantiate(bulletObject, Vector3.zero, Quaternion.identity, shotPointTransform);
     }

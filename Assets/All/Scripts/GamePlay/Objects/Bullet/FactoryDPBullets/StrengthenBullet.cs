@@ -10,9 +10,9 @@ public class StrengthenBullet : BulletMovingGeneric, BulletGeneric
         return (int)BulletType.STRENGTHEN;
     }
 
-    public void SetTarget(Transform target)
+    public void SetTarget(Transform target, Transform shotPoint)
     {
-        SetBaseTarget(target);
+        SetBaseTarget(target, shotPoint);
     }
 
     public void AddForce()

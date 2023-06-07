@@ -41,7 +41,7 @@ public class EnemyShootController : MonoBehaviour
         characterController.SetState((int)AnimState.SHOOTING);
         var bulletTemp = Instantiate(bulletPrefab, shootPoint.position, Quaternion.identity, null);
         bulletTemp.transform.position = new Vector3(bulletTemp.transform.position.x, bulletTemp.transform.position.y, 0);
-        bulletTemp.GetComponent<BulletMovingGeneric>().SetBaseTarget(crossHair);
+        bulletTemp.GetComponent<BulletMovingGeneric>().SetBaseTarget(crossHair, shootPoint);
         bulletTemp.GetComponent<BulletMovingGeneric>().AddBaseForce();
 
         GameElement.Instance.turnBaseMode.BlockBoss(1);

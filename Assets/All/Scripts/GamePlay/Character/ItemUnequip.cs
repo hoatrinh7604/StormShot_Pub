@@ -16,9 +16,10 @@ public class ItemUnequip : MonoBehaviour
     public void Unequip()
     {
         itemEquip = weaponEquipmentController.weapon.gameObject;
-        var rig = itemEquip.AddComponent<Rigidbody>();
-        rig.AddForce(new Vector3(0, 5, 0));
         itemEquip.transform.parent = null;
-        itemEquip.transform.Rotate(new Vector3(0, 0, 90));
+        var rig = itemEquip.AddComponent<Rigidbody>();
+        rig.AddTorque(new Vector3(0, 0, 100));
+        //rig.AddForce(new Vector3(0, 10, 0));
+        //itemEquip.transform.Rotate(new Vector3(0, 0, 90));
     }
 }

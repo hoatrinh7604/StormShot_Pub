@@ -33,6 +33,18 @@ public class RagdollDeath : MonoBehaviour
         }
     }
 
+    public void Death(Vector3 position)
+    {
+        ToggleRagdoll(true);
+        var force = (transform.position - position).normalized;
+        force = new Vector3(3 * force.x, 0.3f, 0);
+        //var force = (collision.transform.position - transform.position);
+        foreach (var rb in ragdollBodies)
+        {
+            rb.AddForce(1000 * force);
+        }
+    }
+
     private void ToggleRagdoll(bool state)
     {
         foreach(var rb in ragdollBodies)

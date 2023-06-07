@@ -4,6 +4,11 @@ using UnityEngine;
 
 public class BulletMovingGeneric : MonoBehaviour
 {
+    [HideInInspector]
+    public Vector2 direction;
+    [HideInInspector]
+    public Transform shotPoint;
+
     protected Rigidbody rb;
     protected Collider col;
     protected Vector3 LastVelocity;
@@ -11,20 +16,20 @@ public class BulletMovingGeneric : MonoBehaviour
     [SerializeField] float speed;
     [SerializeField] Transform crosshair;
     [SerializeField] int numberOfCol = 0;
-    [SerializeField] float timeEnableCollision = 0.1f;
+    public float timeEnableCollision = 0.1f;
 
     private bool canEnableCollision = true;
-    private Vector3 target;
-    [SerializeField] float time = 6;
+    public Vector3 target;
+    public float time = 10;
     // Start is called before the first frame update
     void Awake()
     {
         SetPreValue();
-        //Destroy(this.gameObject, 5f);
+        Destroy(this.gameObject, 5f);
         col.enabled = false;
     }
 
-    private IEnumerator Start()
+    virtual public IEnumerator Start()
     {
         yield return new WaitForSeconds(timeEnableCollision);
         col.enabled = true;
@@ -39,7 +44,7 @@ public class BulletMovingGeneric : MonoBehaviour
     }
 
     // Update is called once per frame
-    void FixedUpdate()
+    virtual public void FixedUpdate()
     {
         time -= Time.deltaTime;
         if(time < 0)
@@ -50,10 +55,12 @@ public class BulletMovingGeneric : MonoBehaviour
         LastVelocity = rb.velocity;
     }
 
-    public void SetBaseTarget(Transform target)
+    public void SetBaseTarget(Transform target, Transform shotPoint)
     {
+        this.shotPoint = shotPoint;
         crosshair = target;
         this.target = new Vector3(target.position.x, target.position.y, target.position.z);
+        transform.right = (target.position - shotPoint.position).normalized;
     }
 
     IEnumerator EnableCollision()
@@ -62,20 +69,30 @@ public class BulletMovingGeneric : MonoBehaviour
         col.isTrigger = false;
     }
 
-    public void AddBaseForce()
+    virtual public void AddBaseForce()
     {
         if(rb == null)
         {
             SetPreValue();
         }
 
-        Vector2 direction = new Vector2(crosshair.position.x - this.transform.position.x, crosshair.position.y - this.transform.position.y);
+        direction = new Vector2(crosshair.position.x - this.transform.position.x, crosshair.position.y - this.transform.position.y);
         direction = direction.normalized;
         rb.AddForce(new Vector2(direction.x * speed, direction.y * speed));
     }
 
+    public void AddNewForce()
+    {
+        if (rb == null)
+        {
+            SetPreValue();
+        }
+
+        rb.AddForce(new Vector2(direction.x * speed, direction.y * speed));
+    }
+
     #region Collision
-    private void OnTriggerEnter(Collider other)
+    virtual public void OnTriggerEnter(Collider other)
     {
         //if (other.gameObject.tag == GameContracts.CYLINDER_TAG)
         //{
@@ -139,7 +156,7 @@ public class BulletMovingGeneric : MonoBehaviour
 
     }
 
-    private void OnCollisionEnter(Collision collision)
+    virtual public void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.tag == GameContracts.NORMAL_BARRIER_TAG)
         {

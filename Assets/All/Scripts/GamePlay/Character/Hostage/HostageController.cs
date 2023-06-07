@@ -28,4 +28,16 @@ public class HostageController : CharacterController
         if (SoundController.Instance == null) return;
         SoundController.Instance.PlayAudio(SoundController.Instance.hostageDeath, PlayerPrefs.GetFloat("EffectSound", 1), false);
     }
+
+    override public void Death(Vector3 position)
+    {
+        if (isDeath) return;
+        base.Death(position);
+        chatBox.SetActive(false);
+
+        GameplayController.Instance.HostageDeath();
+
+        if (SoundController.Instance == null) return;
+        SoundController.Instance.PlayAudio(SoundController.Instance.hostageDeath, PlayerPrefs.GetFloat("EffectSound", 1), false);
+    }
 }

@@ -433,10 +433,10 @@ public class GameplayController : MonoBehaviour
         if(AdsInitializer.Instance)
             AdsInitializer.Instance.banner.LoadAd();
     }
-
+    public int testWeaponID;
     public void ItemEffectControl(GameData data)
     {
-        playerController.EquipWeapon(6); // Equip Gun base
+        playerController.EquipWeapon(1); // Equip Gun base
         foreach (var i in data.SupportItems)
         {
             if (i.type == (int)ItemType.AMMO)

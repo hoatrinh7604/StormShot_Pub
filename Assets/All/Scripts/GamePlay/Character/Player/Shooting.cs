@@ -14,10 +14,21 @@ public class Shooting : MonoBehaviour
 
     public void ShootingBullet(GameObject bullet, Transform target)
     {
-        var bulletTemp = Instantiate(bullet, shootPoint.position, Quaternion.identity, null);
-        bulletTemp.transform.position = new Vector3(bulletTemp.transform.position.x, bulletTemp.transform.position.y, 0);
-        bulletTemp.GetComponent<BulletMovingGeneric>().SetBaseTarget(target);
+        if(bullet.GetComponent<SniperBullet>() != null)
+        {
+            ShootingSniper(bullet, target);
+            return;
+        }
+
+        var bulletTemp = Instantiate(bullet, shootPoint.position, shootPoint.rotation);
+        //bulletTemp.transform.localPosition = new Vector3(bulletTemp.transform.localPosition.x, bulletTemp.transform.localPosition.y, 0);
+        bulletTemp.GetComponent<BulletMovingGeneric>().SetBaseTarget(target, shootPoint);
         bulletTemp.GetComponent<BulletMovingGeneric>().AddBaseForce();
+    }
+
+    public void ShootingSniper(GameObject bullet, Transform target)
+    {
+        var bulletTemp = Instantiate(bullet, target.position, target.rotation);
     }
 
     public Transform GetShootPoint()

@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class CharacterController : MonoBehaviour
@@ -115,6 +116,13 @@ public class CharacterController : MonoBehaviour
         if (other.gameObject.GetComponent<ExplosionController>())
         {
             BreakCharacter(null);
+        }
+        else if(other.gameObject.GetComponent<BulletGeneric>() != null)
+        {
+            if (other.gameObject.GetComponent<RocketBullet>() != null) return;
+            if (other.gameObject.GetComponent<SniperBullet>() != null) return;
+            BloodEffect();
+            Death(other.gameObject.transform.position);
         }
     }
 
@@ -277,6 +285,22 @@ public class CharacterController : MonoBehaviour
         col.isTrigger = true;
 
         if(GetComponent<ItemUnequip>())
+        {
+            GetComponent<ItemUnequip>().Unequip();
+        }
+    }
+
+    virtual public void Death(Vector3 position)
+    {
+        if (isDeath) return;
+        healthBar.gameObject.SetActive(false);
+        isDeath = true;
+        ragdollDeath.Death(position);
+        gameObject.transform.SetParent(null);
+        rig.isKinematic = true;
+        col.isTrigger = true;
+
+        if (GetComponent<ItemUnequip>())
         {
             GetComponent<ItemUnequip>().Unequip();
         }
