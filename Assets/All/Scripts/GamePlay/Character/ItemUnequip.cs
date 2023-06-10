@@ -17,6 +17,7 @@ public class ItemUnequip : MonoBehaviour
     {
         itemEquip = weaponEquipmentController.weapon.gameObject;
         itemEquip.transform.parent = null;
+        itemEquip.GetComponent<Collider>().enabled = true;
         var rig = itemEquip.AddComponent<Rigidbody>();
         rig.AddTorque(new Vector3(0, 0, 100));
         //rig.AddForce(new Vector3(0, 10, 0));

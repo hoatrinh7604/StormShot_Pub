@@ -15,6 +15,11 @@ public class AnimationControllerEndgame : MonoBehaviour
 
         foreach (var e in enemy)
         {
+            var movingControl = e.GetComponent<CharacterMoving>();
+            if(movingControl)
+            {
+                movingControl.Idle();
+            }
             e.GetComponent<EnemyController>().SetState((int)AnimState.VICTORY);
         }
     }

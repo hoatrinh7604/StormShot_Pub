@@ -2965,7 +2965,7 @@ MonoBehaviour:
   showSlider: 0
   bloodEffect: {fileID: 4464893211715183357, guid: ad900d3931713f9499a03307d4bac445, type: 3}
   bloodEffectLoop: {fileID: 4464893211715183357, guid: ad900d3931713f9499a03307d4bac445, type: 3}
-  bloodSpaw: {fileID: 191504549789127036}
+  bloodSpaw: {fileID: 191504549789126976}
   breakCharacter: {fileID: 1210965636360291494, guid: f2e4627785cf45f4e8f00bbd6e2bef36, type: 3}
   brokenCharacter: {fileID: 1210965636360291494, guid: f2e4627785cf45f4e8f00bbd6e2bef36, type: 3}
   voiceOnWake: 1

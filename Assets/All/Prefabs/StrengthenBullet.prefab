@@ -114,10 +114,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 64058ef96854ed44c9282f44c1610da5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  direction: {x: 0, y: 0}
+  shotPoint: {fileID: 0}
   speed: 100
   crosshair: {fileID: 0}
   numberOfCol: 0
   timeEnableCollision: 0.05
+  target: {x: 0, y: 0, z: 0}
   time: 6
   explosionEff: {fileID: 190108805838455312, guid: 9aa7673addfb79e468a7872256109fcc, type: 3}
 --- !u!54 &7892607179774294044
@@ -133,7 +136,7 @@ Rigidbody:
   m_AngularDrag: 0
   m_UseGravity: 0
   m_IsKinematic: 0
-  m_Interpolate: 0
+  m_Interpolate: 2
   m_Constraints: 0
   m_CollisionDetection: 1
 --- !u!96 &7892607179774294047

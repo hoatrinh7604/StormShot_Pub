@@ -1142,10 +1142,10 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 0.41279864
-  m_Height: 3.5544243
+  m_Radius: 1
+  m_Height: 4.8689537
   m_Direction: 1
-  m_Center: {x: 0.037348803, y: 1.8490973, z: -0.04985258}
+  m_Center: {x: -0.027945995, y: 2.549399, z: -2.7650704e-10}
 --- !u!114 &8365021867997387734
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1166,7 +1166,7 @@ MonoBehaviour:
   showSlider: 0
   bloodEffect: {fileID: 4464893211715183357, guid: ad900d3931713f9499a03307d4bac445, type: 3}
   bloodEffectLoop: {fileID: 4464893211715183357, guid: ad900d3931713f9499a03307d4bac445, type: 3}
-  bloodSpaw: {fileID: 8919505973642253147}
+  bloodSpaw: {fileID: 8919505973642253159}
   breakCharacter: {fileID: 2616582310516464899, guid: 7d481cddc65ee7b40aff8c3540b8e086, type: 3}
   brokenCharacter: {fileID: 2616582310516464899, guid: 7d481cddc65ee7b40aff8c3540b8e086, type: 3}
   voiceOnWake: 1

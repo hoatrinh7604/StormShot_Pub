@@ -252,6 +252,12 @@ public class GameplayController : MonoBehaviour
             if (!control.isDeath)
             {
                 control.SetState((int)AnimState.IDLE);
+
+                var movingControl = h.GetComponent<CharacterMoving>();
+                if (movingControl && movingControl.enabled)
+                {
+                    movingControl.Walking();
+                }
             }
         }
 
@@ -324,6 +330,11 @@ public class GameplayController : MonoBehaviour
 
         foreach (var e in enemy)
         {
+            var movingControl = e.GetComponent<CharacterMoving>();
+            if (movingControl && movingControl.enabled)
+            {
+                movingControl.Idle();
+            }
             e.GetComponent<EnemyController>().SetState((int)AnimState.VICTORY);
         }
 
@@ -436,7 +447,7 @@ public class GameplayController : MonoBehaviour
     public int testWeaponID;
     public void ItemEffectControl(GameData data)
     {
-        playerController.EquipWeapon(1); // Equip Gun base
+        playerController.EquipWeapon(testWeaponID); // Equip Gun base
         foreach (var i in data.SupportItems)
         {
             if (i.type == (int)ItemType.AMMO)

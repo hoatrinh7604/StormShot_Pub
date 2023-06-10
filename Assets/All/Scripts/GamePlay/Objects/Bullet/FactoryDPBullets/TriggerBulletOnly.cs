@@ -11,7 +11,7 @@ public class TriggerBulletOnly : BulletMovingGeneric, Object, BulletGeneric
         if (other.gameObject.layer == (int)LayerMask.NameToLayer(GameContracts.CHARACTER_LAYER))
         {
             other.gameObject.GetComponent<CharacterController>().Death(transform.position);
-            Destroy(this.gameObject);
+            //Destroy(this.gameObject);
         }
     }
 

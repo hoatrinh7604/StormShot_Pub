@@ -86,6 +86,7 @@ public class BombObject : ObjectController
 
     public void Timer()
     {
+        if (GameplayController.Instance.gameState == (int)GameState.PAUSE) return;
         timer -= Time.deltaTime;
         txt_Time.text = timer.ToString("0");
         if (timer <= 0)

@@ -15,7 +15,7 @@
       "quantity": 0,
       "price": 500,
       "isEquip": 0,
-      "info": "This ammo can move through obstangles but only kill one character!"
+      "info": "This ammo can move through & kill more characters!"
     },
     {
       "name": "Rifle2",

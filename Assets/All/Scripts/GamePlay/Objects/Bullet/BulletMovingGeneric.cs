@@ -53,6 +53,7 @@ public class BulletMovingGeneric : MonoBehaviour
         }
 
         LastVelocity = rb.velocity;
+        transform.position = new Vector3(transform.position.x, transform.position.y, 0);
     }
 
     public void SetBaseTarget(Transform target, Transform shotPoint)

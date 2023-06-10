@@ -115,7 +115,7 @@ Rigidbody:
   m_AngularDrag: 0
   m_UseGravity: 0
   m_IsKinematic: 0
-  m_Interpolate: 1
+  m_Interpolate: 2
   m_Constraints: 120
   m_CollisionDetection: 2
 --- !u!114 &5828586607898150131
@@ -131,10 +131,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   direction: {x: 0, y: 0}
+  shotPoint: {fileID: 0}
   speed: 40
   crosshair: {fileID: 0}
   numberOfCol: 0
   timeEnableCollision: 0.05
+  target: {x: 0, y: 0, z: 0}
   time: 5
   childBullet: {fileID: 5828586607898150024, guid: b320141c3b889c842861b9a6e6d7bfc5, type: 3}
   explosionEff: {fileID: 190108805838455312, guid: 9aa7673addfb79e468a7872256109fcc, type: 3}
@@ -211,7 +213,7 @@ TrailRenderer:
       m_RotationOrder: 4
     colorGradient:
       serializedVersion: 2
-      key0: {r: 0.01886791, g: 0.01886791, b: 0.01886791, a: 0.8117647}
+      key0: {r: 0.8117647, g: 0, b: 0.7882353, a: 0.8117647}
       key1: {r: 1, g: 1, b: 1, a: 0.39607844}
       key2: {r: 0, g: 0, b: 0, a: 0}
       key3: {r: 0, g: 0, b: 0, a: 0}
@@ -282,6 +284,14 @@ PrefabInstance:
     - target: {fileID: 309908454665629572, guid: 179896751e6618d4bbf1e638d0a6e775, type: 3}
       propertyPath: m_Intensity
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 496487244642044109, guid: 179896751e6618d4bbf1e638d0a6e775, type: 3}
+      propertyPath: InitialModule.startSize.scalar
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 496487244642044109, guid: 179896751e6618d4bbf1e638d0a6e775, type: 3}
+      propertyPath: InitialModule.startSize.minScalar
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 496487244642044109, guid: 179896751e6618d4bbf1e638d0a6e775, type: 3}
       propertyPath: InitialModule.startColor.maxColor.b
@@ -366,6 +376,18 @@ PrefabInstance:
     - target: {fileID: 9027514048236820042, guid: 179896751e6618d4bbf1e638d0a6e775, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9027514048236820043, guid: 179896751e6618d4bbf1e638d0a6e775, type: 3}
+      propertyPath: moveWithTransform
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9027514048236820043, guid: 179896751e6618d4bbf1e638d0a6e775, type: 3}
+      propertyPath: InitialModule.maxNumParticles
+      value: 1000
+      objectReference: {fileID: 0}
+    - target: {fileID: 9027514048236820043, guid: 179896751e6618d4bbf1e638d0a6e775, type: 3}
+      propertyPath: EmissionModule.rateOverTime.scalar
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 9027514048236820043, guid: 179896751e6618d4bbf1e638d0a6e775, type: 3}
       propertyPath: InitialModule.startColor.maxColor.b

@@ -30,6 +30,7 @@ public class CharacterController : MonoBehaviour
 
     private string aimAnimationName;
     private string shootAnimationName;
+    private GameObject m_bloodEffect;
 
     virtual public void Awake()
     {
@@ -124,6 +125,13 @@ public class CharacterController : MonoBehaviour
             BloodEffect();
             Death(other.gameObject.transform.position);
         }
+        else if (other.gameObject.GetComponent<DamageConfig>() != null)
+        {
+            if (other.gameObject.GetComponent<RocketBullet>() != null) return;
+            if (other.gameObject.GetComponent<SniperBullet>() != null) return;
+            BloodEffect();
+            Death(other.gameObject.transform.position);
+        }
     }
 
     public void OnCollisionEnter(Collision collision)
@@ -134,7 +142,7 @@ public class CharacterController : MonoBehaviour
             return;
         }
 
-        if (collision.gameObject.tag == GameContracts.TRAP_TAG || collision.gameObject.GetComponent<SawController>())
+        if (collision.gameObject.tag == GameContracts.TRAP_TAG || collision.gameObject.GetComponent<SawController>() || collision.gameObject.GetComponent<BallController>())
         {
             OnColliderWithBarrier(collision);
             return;
@@ -169,7 +177,7 @@ public class CharacterController : MonoBehaviour
         if (isDeath) return;
 
         // Check pos
-        if (collision.gameObject.GetComponent<SawController>())
+        if (collision.gameObject.GetComponent<SawController>() || collision.gameObject.GetComponent<BallController>())
         {
             //StartCoroutine(DisableAfterTime(0));
             //BrokenCharacter(collision);
@@ -191,13 +199,13 @@ public class CharacterController : MonoBehaviour
 
         hp -= getDamage;
         SetAnim((int)AnimState.HIT);
-        InitBloodEffect(collision.gameObject.transform);
+        //InitBloodEffect(collision.gameObject.transform);
         if (healthBar.transform.parent.gameObject.activeSelf)
             healthBar.UpdateSlider(hp);
         if (hp <= 0)
         {
-            Death(collision);
             BloodEffect();
+            Death(collision);
         }
     }
     #endregion
@@ -207,7 +215,17 @@ public class CharacterController : MonoBehaviour
     public void BreakCharacter(Collision collision)
     {
         StartCoroutine(DisableAfterTime());
-        if (isDeath) return;
+        if (isDeath)
+        {
+            gameObject.SetActive(false);
+
+            var newCharacter = Instantiate(breakCharacter, bloodSpaw.position, Quaternion.identity, bloodSpaw);
+            newCharacter.transform.localPosition = Vector3.zero;
+            newCharacter.transform.parent = null;
+
+            col.enabled = false;
+            return;
+        }
         gameObject.SetActive(false);
 
         var character = Instantiate(breakCharacter, Vector3.zero, Quaternion.identity, transform);
@@ -243,15 +261,16 @@ public class CharacterController : MonoBehaviour
     {
         var eff = Instantiate(bloodEffect, Vector3.zero, Quaternion.identity, point);
         eff.transform.localPosition = Vector3.zero;
+        eff.transform.localScale = Vector3.one;
         eff.transform.SetParent(null);
-        Destroy(eff, 1f);
+        Destroy(eff, 0.3f);
     }
 
     public void BloodEffect()
     {
-        var eff = Instantiate(bloodEffectLoop, Vector3.zero, Quaternion.identity, bloodSpaw);
-        eff.transform.localPosition = Vector3.zero;
-        eff.transform.localRotation = Quaternion.Euler(0, 0, 0);
+        if (m_bloodEffect) return;
+        m_bloodEffect = Instantiate(bloodEffectLoop, bloodSpaw.position, Quaternion.identity, bloodSpaw);
+        m_bloodEffect.transform.localRotation = Quaternion.Euler(-m_bloodEffect.transform.localRotation.x, m_bloodEffect.transform.localRotation.y, m_bloodEffect.transform.localRotation.z);
     }
     #endregion
 

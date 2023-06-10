@@ -18,4 +18,9 @@ public class TestScript : MonoBehaviour
     {
         Debug.Log("Fail to get rewarded");
     }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        print("Trigger enter");
+    }
 }
