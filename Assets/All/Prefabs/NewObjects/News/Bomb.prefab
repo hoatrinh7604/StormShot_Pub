@@ -81,7 +81,7 @@ MonoBehaviour:
   rigBody: {fileID: 0}
   velocityMoving: 5
   explosionObj: {fileID: 8016218211631781172, guid: 1a15913838ab8674688afb77ea958b3e, type: 3}
-  effect: {fileID: 3151791017703268682, guid: 36326bb65369f9f488aff5b673df9990, type: 3}
+  effect: {fileID: 1990095778697238632, guid: aa26dee99556dfc4fabd202e4b84d761, type: 3}
   hasEffect: 1
   timeScape: 10
   txt_Time: {fileID: 5466402959650064254}

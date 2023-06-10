@@ -78,8 +78,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rigBody: {fileID: 0}
+  velocityMoving: 5
   explosionObj: {fileID: 2343041406055516635, guid: a1653f061e53b974f93821282dff264c, type: 3}
-  effect: {fileID: 1990095778697238632, guid: aa26dee99556dfc4fabd202e4b84d761, type: 3}
+  effect: {fileID: 1990095778697238632, guid: b30061e9f6f5da04eb284b34e2aff4ed, type: 3}
   hasEffect: 1
 --- !u!114 &2743408726751301310
 MonoBehaviour:
