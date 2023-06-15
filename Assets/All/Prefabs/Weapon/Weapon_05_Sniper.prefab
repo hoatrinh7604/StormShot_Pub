@@ -137,9 +137,9 @@ MonoBehaviour:
   aimingAnimation: Aiming
   shootingAnimation: Shooting
   localPosition: {x: -0.82, y: -0.13, z: 0.11}
-  localRotation: {x: 140, y: 0, z: 0}
-  twoBonePosition: {x: -0.9, y: 0, z: 0}
-  twoBoneRotation: {x: 0, y: -46.6, z: 0}
+  localRotation: {x: 162.28, y: 0, z: 0}
+  twoBonePosition: {x: -1.28, y: 0.24, z: -0.18}
+  twoBoneRotation: {x: 13.143, y: -68.038, z: 8.933}
   sniperBulletPrefab: {fileID: 5828586607898150024, guid: e026198fbfc7683408849009aa45fbd1, type: 3}
 --- !u!65 &6936231323153204481
 BoxCollider:

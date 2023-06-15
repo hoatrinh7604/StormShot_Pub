@@ -169,6 +169,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rigBody: {fileID: 0}
+  velocityMoving: 5
   canBreak: 1
   forceScale: 5
 --- !u!114 &2850128110277845164
@@ -195,7 +196,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.6180477, y: 2.2463913, z: 1}
+  m_Size: {x: 0.6180477, y: 2.2463913, z: 4}
   m_Center: {x: 0.030154228, y: 0, z: 0}
 --- !u!1 &2850128110426947179
 GameObject:

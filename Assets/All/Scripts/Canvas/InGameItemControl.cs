@@ -109,6 +109,11 @@ public class InGameItemControl : MonoBehaviour
         gameDataController.UpdateEquipmentState(type, isEquip);
     }
 
+    public void UnEquipWeaponItemExcept(int type)
+    {
+        itemController.UnEquipWeaponItemExcept(type);
+    }
+
     public void AddItem(System.Action callback, int type, int price)
     {
         StartCoroutine(AddMoreItem(callback, type, price));

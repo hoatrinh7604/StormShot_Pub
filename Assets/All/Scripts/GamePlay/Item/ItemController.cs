@@ -60,4 +60,22 @@ public class ItemController : MonoBehaviour
             listButtonItem[i].GetComponent<ItemButtonController>().SetInfo(list[i]);
         }
     }
+
+    public void UnEquipWeaponItemExcept(int type)
+    {
+        var listItems = gameDataController.GetGameData().SupportItems;
+        for (int i = 0; i < listItems.Count; i++)
+        {
+            if (listItems[i].type == type || listItems[i].type == (int)ItemType.AMMO) continue;
+            listItems[i].isEquip = 0;
+        }
+
+        for (int i = 0; i < listButtonItem.Count; i++)
+        {
+            if (listButtonItem[i].GetItemType() == type || listButtonItem[i].GetItemType() == (int)ItemType.AMMO) continue;
+            listButtonItem[i].SetEquipWithoutSave(false);
+        }
+
+        gameDataController.UpdateEquipmentListState(listItems);
+    }
 }

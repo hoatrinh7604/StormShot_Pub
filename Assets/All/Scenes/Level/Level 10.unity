@@ -342,6 +342,7 @@ MonoBehaviour:
   pauseController: {fileID: 0}
   turnBaseMode: {fileID: 0}
   checkingStateDelay: 3
+  testWeaponID: 0
 --- !u!114 &52262100
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -508,6 +509,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 438747315}
     m_Modifications:
+    - target: {fileID: 2565120512267624749, guid: 9dade3553b2e68648a0fe3a84e855c27, type: 3}
+      propertyPath: m_Mass
+      value: 0.7
+      objectReference: {fileID: 0}
     - target: {fileID: 2565120512267624749, guid: 9dade3553b2e68648a0fe3a84e855c27, type: 3}
       propertyPath: m_AngularDrag
       value: 0.1

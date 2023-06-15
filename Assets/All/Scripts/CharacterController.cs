@@ -25,8 +25,8 @@ public class CharacterController : MonoBehaviour
     // Start is called before the first frame update
 
     [SerializeField] bool voiceOnWake = false;
-    [SerializeField] float delaySpeak = 3f;
-    private float timing;
+    public float delaySpeak = 3f;
+    public float timing;
 
     private string aimAnimationName;
     private string shootAnimationName;
@@ -43,7 +43,7 @@ public class CharacterController : MonoBehaviour
         SetInfo(hp);
     }
 
-    private void Update()
+    virtual public void Update()
     {
         if(voiceOnWake)
         {
@@ -113,6 +113,7 @@ public class CharacterController : MonoBehaviour
     #region Physic control
     private void OnTriggerEnter(Collider other)
     {
+        if (other.gameObject.tag == GameContracts.CYLINDER_TAG) return;
         //if (other.gameObject.name == GameContracts.EXPLOSION_NAME)
         if (other.gameObject.GetComponent<ExplosionController>())
         {
@@ -136,6 +137,7 @@ public class CharacterController : MonoBehaviour
 
     public void OnCollisionEnter(Collision collision)
     {
+        if (collision.gameObject.tag == GameContracts.CYLINDER_TAG) return;
         if (collision.gameObject.tag == GameContracts.DAMAGE_TAG)
         {
             OnColliderWithBullet(collision);

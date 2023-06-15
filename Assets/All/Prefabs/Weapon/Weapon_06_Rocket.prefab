@@ -283,10 +283,10 @@ MonoBehaviour:
   bullet: 5
   aimingAnimation: Aiming
   shootingAnimation: Shooting
-  localPosition: {x: -0.46, y: -0.14, z: 0.13}
-  localRotation: {x: 140, y: 0, z: 0}
-  twoBonePosition: {x: -0.9, y: 0, z: 0}
-  twoBoneRotation: {x: 0, y: -46.6, z: 0}
+  localPosition: {x: -0.46, y: -0.24, z: -0.14}
+  localRotation: {x: 162.4, y: 0, z: 0}
+  twoBonePosition: {x: -1.19, y: 0.91, z: 0.41}
+  twoBoneRotation: {x: -41.509, y: -68.552, z: 30.933}
 --- !u!65 &1301315997774193473
 BoxCollider:
   m_ObjectHideFlags: 0

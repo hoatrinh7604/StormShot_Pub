@@ -30,6 +30,11 @@ public class GameDataController : MonoBehaviour
         UpdateEquipment(type, isEquip);
     }
 
+    public void UpdateEquipmentListState(List<SupportItem> list)
+    {
+        UpdateEquipmentForMoreItems(list);
+    }
+
     public GameData GetGameData()
     {
         if (gameData == null)
@@ -104,6 +109,25 @@ public class GameDataController : MonoBehaviour
                 break;
             }
         }
+
+        dataSaveController.WriteFile(JsonUtility.ToJson(data));
+        gameData = data;
+    }
+
+    private void UpdateEquipmentForMoreItems(List<SupportItem> listItems)
+    {
+        var dataLocal = dataSaveController.ReadFile();
+        var data = new GameData();
+
+        if (dataLocal != "")
+        {
+            data = JsonUtility.FromJson<GameData>(dataLocal);
+        }
+
+        if (data.SupportItems == null) return;
+
+        data.SupportItems.Clear();
+        data.SupportItems.AddRange(listItems);
 
         dataSaveController.WriteFile(JsonUtility.ToJson(data));
         gameData = data;

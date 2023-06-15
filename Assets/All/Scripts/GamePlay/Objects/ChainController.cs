@@ -6,6 +6,7 @@ public class ChainController : ObjectController
 {
     [SerializeField] bool canBreak = false;
     [SerializeField] float forceScale = 5;
+    [SerializeField] GameObject igroneObject;
 
     override public void OnTriggerEnter(Collider other)
     {
@@ -13,6 +14,22 @@ public class ChainController : ObjectController
         if(other.tag == GameContracts.DAMAGE_TAG)
         {
             OnDamage(other);
+        }
+        else
+        {
+            var saw = other.gameObject.GetComponent<SawController>();
+            if(saw != null && igroneObject != saw.gameObject)
+            {
+                OnDamage(other);
+                return;
+            }
+
+            var ball = other.gameObject.GetComponent<BallController>();
+            if (ball != null && igroneObject != ball.gameObject)
+            {
+                OnDamage(other);
+                return;
+            }
         }
     }
 

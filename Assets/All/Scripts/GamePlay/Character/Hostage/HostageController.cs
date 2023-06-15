@@ -6,6 +6,13 @@ public class HostageController : CharacterController
 {
     [SerializeField] GameObject chatBox;
 
+    IEnumerator Start()
+    {
+        chatBox.SetActive(false);
+        yield return new WaitForSeconds(delaySpeak);
+        chatBox.SetActive(true);
+    }
+
     override public void PlayWakeSound()
     {
         if (SoundController.Instance == null) return;

@@ -14,6 +14,7 @@ public class SniperBullet : BulletMovingGeneric, Object, BulletGeneric
 
     public override void OnCollisionEnter(Collision collision)
     {
+        col.enabled = false;
         Destroy(this.gameObject, 1.0f);
     }
 

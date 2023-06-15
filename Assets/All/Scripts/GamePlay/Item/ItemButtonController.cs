@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -108,6 +109,15 @@ public class ItemButtonController : MonoBehaviour
         SetEquipment(type, isSelected ? 1 : 0);
 
         ToggleHandle();
+
+        if (mainMenuItemController)
+        {
+            mainMenuItemController.UnEquipWeaponItemExcept(type);
+        }
+        else if (inGameItemControl)
+        {
+            inGameItemControl.UnEquipWeaponItemExcept(type);
+        }
     }
 
     public void SetEquipment(int type, int isEquip)
@@ -120,6 +130,12 @@ public class ItemButtonController : MonoBehaviour
         {
             inGameItemControl.EquipItem(type, isEquip);
         }
+    }
+
+    public void SetEquipWithoutSave(bool isEquip)
+    {
+        isSelected = isEquip;
+        ToggleHandle();
     }
 
     public bool IsEquip()

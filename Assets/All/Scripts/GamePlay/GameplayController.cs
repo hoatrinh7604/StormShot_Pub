@@ -447,7 +447,7 @@ public class GameplayController : MonoBehaviour
     public int testWeaponID;
     public void ItemEffectControl(GameData data)
     {
-        playerController.EquipWeapon(testWeaponID); // Equip Gun base
+        playerController.EquipWeapon(1); // Equip Gun base
         foreach (var i in data.SupportItems)
         {
             if (i.type == (int)ItemType.AMMO)

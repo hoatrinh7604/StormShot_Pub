@@ -342,7 +342,7 @@ MonoBehaviour:
   pauseController: {fileID: 0}
   turnBaseMode: {fileID: 0}
   checkingStateDelay: 3
-  testWeaponID: 5
+  testWeaponID: 6
 --- !u!114 &52262100
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3425,10 +3425,6 @@ PrefabInstance:
     - target: {fileID: 4507680810272459511, guid: 8703a548902069f4d9dc2d23f6c70457, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6036971710641666413, guid: 8703a548902069f4d9dc2d23f6c70457, type: 3}
-      propertyPath: weaponID
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8703a548902069f4d9dc2d23f6c70457, type: 3}
