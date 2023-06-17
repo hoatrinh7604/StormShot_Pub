@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 3712354145356377969}
   - component: {fileID: 1567910414132639031}
   - component: {fileID: 984469906571427867}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: head_28_cap_A_cell.007
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -108,7 +108,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 591341071003191613}
   serializedVersion: 2
-  m_Mass: 1
+  m_Mass: 0.5
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
@@ -202,7 +202,7 @@ GameObject:
   - component: {fileID: 7199412855775579841}
   - component: {fileID: 3987303482152272428}
   - component: {fileID: 1751463611609364287}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Body_02_blackTshirt_cell.004
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -296,7 +296,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1225324453402891057}
   serializedVersion: 2
-  m_Mass: 1
+  m_Mass: 0.5
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
@@ -331,7 +331,7 @@ GameObject:
   - component: {fileID: 7388539644908558259}
   - component: {fileID: 9127535836011617924}
   - component: {fileID: 4996604522511370958}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: head_28_cap_A_cell.003
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -425,7 +425,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1768939178958065910}
   serializedVersion: 2
-  m_Mass: 1
+  m_Mass: 0.5
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
@@ -447,7 +447,7 @@ GameObject:
   - component: {fileID: 6449590568001453100}
   - component: {fileID: 9180950719301893294}
   - component: {fileID: 8026724668904134550}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Body_02_blackTshirt_cell.002
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -541,7 +541,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1847972147384756925}
   serializedVersion: 2
-  m_Mass: 1
+  m_Mass: 0.5
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
@@ -576,7 +576,7 @@ GameObject:
   - component: {fileID: 1971106732905414090}
   - component: {fileID: 2611708355984818992}
   - component: {fileID: 3574427966232116864}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: head_28_cap_A_cell.002_cell.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -670,7 +670,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3021580405176997563}
   serializedVersion: 2
-  m_Mass: 1
+  m_Mass: 0.5
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
@@ -691,7 +691,7 @@ GameObject:
   - component: {fileID: 4937462240406558330}
   - component: {fileID: 4188455826219849748}
   - component: {fileID: 6956621787925751335}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: head_28_cap_A_cell.005
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -785,7 +785,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3135431878736716780}
   serializedVersion: 2
-  m_Mass: 1
+  m_Mass: 0.5
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
@@ -946,7 +946,7 @@ GameObject:
   - component: {fileID: 657171691577583294}
   - component: {fileID: 2572121642416395427}
   - component: {fileID: 776519022921920554}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Body_02_blackTshirt_cell.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1040,7 +1040,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3271416730538702707}
   serializedVersion: 2
-  m_Mass: 1
+  m_Mass: 0.5
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
@@ -1061,7 +1061,7 @@ GameObject:
   - component: {fileID: 3224388712061042047}
   - component: {fileID: 3577338550793153074}
   - component: {fileID: 526642516657714888}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Body_02_blackTshirt_cell.007
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1155,7 +1155,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3682245908485035685}
   serializedVersion: 2
-  m_Mass: 1
+  m_Mass: 0.5
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
@@ -1176,7 +1176,7 @@ GameObject:
   - component: {fileID: 2788874716240410336}
   - component: {fileID: 9142757616240390358}
   - component: {fileID: 645691460970283922}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: head_28_cap_A_cell.008
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1270,7 +1270,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4175168704281186548}
   serializedVersion: 2
-  m_Mass: 1
+  m_Mass: 0.5
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
@@ -1292,7 +1292,7 @@ GameObject:
   - component: {fileID: 3261826609462925270}
   - component: {fileID: 1031374094234019512}
   - component: {fileID: 4811741440561201334}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: head_28_cap_A_cell.004
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1386,7 +1386,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4288678473385961029}
   serializedVersion: 2
-  m_Mass: 1
+  m_Mass: 0.5
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
@@ -1421,7 +1421,7 @@ GameObject:
   - component: {fileID: 5774015188215277830}
   - component: {fileID: 6701210945044911080}
   - component: {fileID: 295073324448676791}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Body_02_blackTshirt_cell.009
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1515,7 +1515,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4667402291844610621}
   serializedVersion: 2
-  m_Mass: 1
+  m_Mass: 0.5
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
@@ -1537,7 +1537,7 @@ GameObject:
   - component: {fileID: 2986563935153257734}
   - component: {fileID: 1436187932492740057}
   - component: {fileID: 4921146832274665674}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Body_02_blackTshirt_cell.010
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1631,7 +1631,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5230856776660602541}
   serializedVersion: 2
-  m_Mass: 1
+  m_Mass: 0.5
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
@@ -1666,7 +1666,7 @@ GameObject:
   - component: {fileID: 4533424485074635469}
   - component: {fileID: 1458377128649943945}
   - component: {fileID: 4644683163446616139}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: head_28_cap_A_cell.002_cell.003
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1760,7 +1760,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5392693874183015481}
   serializedVersion: 2
-  m_Mass: 1
+  m_Mass: 0.5
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
@@ -1781,7 +1781,7 @@ GameObject:
   - component: {fileID: 1971176375263547137}
   - component: {fileID: 539404749498191418}
   - component: {fileID: 2633085120006369383}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: head_28_cap_A_cell.009
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1875,7 +1875,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5674418324653375513}
   serializedVersion: 2
-  m_Mass: 1
+  m_Mass: 0.5
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
@@ -1896,7 +1896,7 @@ GameObject:
   - component: {fileID: 7448618345249451420}
   - component: {fileID: 28816444170766368}
   - component: {fileID: 6852462551865221157}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Body_02_blackTshirt_cell.011
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1990,7 +1990,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5995134490598416971}
   serializedVersion: 2
-  m_Mass: 1
+  m_Mass: 0.5
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
@@ -2012,7 +2012,7 @@ GameObject:
   - component: {fileID: 2802078401508948383}
   - component: {fileID: 4143584510366637673}
   - component: {fileID: 5590875543816943433}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: head_28_cap_A_cell.002_cell
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2106,7 +2106,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6126971199354477712}
   serializedVersion: 2
-  m_Mass: 1
+  m_Mass: 0.5
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
@@ -2142,7 +2142,7 @@ GameObject:
   - component: {fileID: 4192128286920459450}
   - component: {fileID: 3307392360248308438}
   - component: {fileID: 1926171745870821592}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Body_02_blackTshirt_cell.008
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2236,7 +2236,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6798497225029955580}
   serializedVersion: 2
-  m_Mass: 1
+  m_Mass: 0.5
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
@@ -2272,7 +2272,7 @@ GameObject:
   - component: {fileID: 464983944571832139}
   - component: {fileID: 9011425559375993005}
   - component: {fileID: 7637202307798700479}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Body_02_blackTshirt_cell
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2366,7 +2366,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7000492570296557070}
   serializedVersion: 2
-  m_Mass: 1
+  m_Mass: 0.5
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
@@ -2401,7 +2401,7 @@ GameObject:
   - component: {fileID: 3650233488703576937}
   - component: {fileID: 1838181568114805202}
   - component: {fileID: 3644376565275694449}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Body_02_blackTshirt_cell.005
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2495,7 +2495,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7020563441501635172}
   serializedVersion: 2
-  m_Mass: 1
+  m_Mass: 0.5
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
@@ -2517,7 +2517,7 @@ GameObject:
   - component: {fileID: 2576568097065135960}
   - component: {fileID: 7789411347676057399}
   - component: {fileID: 4227272321070167730}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Body_02_blackTshirt_cell.012
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2611,7 +2611,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7187763568173607647}
   serializedVersion: 2
-  m_Mass: 1
+  m_Mass: 0.5
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
@@ -2647,7 +2647,7 @@ GameObject:
   - component: {fileID: 7226159280669578518}
   - component: {fileID: 6872533610596277736}
   - component: {fileID: 5507111455860299596}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Body_02_blackTshirt_cell.006
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2741,7 +2741,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7486329676727954636}
   serializedVersion: 2
-  m_Mass: 1
+  m_Mass: 0.5
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
@@ -2777,7 +2777,7 @@ GameObject:
   - component: {fileID: 7564754379725571015}
   - component: {fileID: 1289612345386312456}
   - component: {fileID: 8469577245925197498}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: head_28_cap_A_cell.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2871,7 +2871,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7525515676363591858}
   serializedVersion: 2
-  m_Mass: 1
+  m_Mass: 0.5
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
@@ -2906,7 +2906,7 @@ GameObject:
   - component: {fileID: 3405556236495846196}
   - component: {fileID: 4881134852357776450}
   - component: {fileID: 5923411598302804954}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: head_28_cap_A_cell.002
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3000,7 +3000,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7906349116866339016}
   serializedVersion: 2
-  m_Mass: 1
+  m_Mass: 0.5
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
@@ -3022,7 +3022,7 @@ GameObject:
   - component: {fileID: 4838092818096303135}
   - component: {fileID: 205471544504667426}
   - component: {fileID: 5642480985776242282}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: head_28_cap_A_cell.002_cell.002
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3116,7 +3116,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8597923682529459442}
   serializedVersion: 2
-  m_Mass: 1
+  m_Mass: 0.5
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
@@ -3151,7 +3151,7 @@ GameObject:
   - component: {fileID: 5472319048315813581}
   - component: {fileID: 138697079254913679}
   - component: {fileID: 672072151076986311}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Body_02_blackTshirt_cell.003
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3245,7 +3245,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9038400524594259693}
   serializedVersion: 2
-  m_Mass: 1
+  m_Mass: 0.5
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
@@ -3266,7 +3266,7 @@ GameObject:
   - component: {fileID: 3246704460743640721}
   - component: {fileID: 7977249073064284773}
   - component: {fileID: 7247600088842241843}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: head_28_cap_A_cell
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3360,7 +3360,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9113204069190343514}
   serializedVersion: 2
-  m_Mass: 1
+  m_Mass: 0.5
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
